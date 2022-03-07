@@ -6,7 +6,7 @@ Hi!
 
 A little about me:
 
-I am German, who immigrated to the states at the age of 5. Sadly I lost the sweet sweet accent. My family is still located in Frankfurt area, Northern Germany, and Southern Germany.
+I am German, who immigrated to the states at the age of 5. My family is still located in Frankfurt area, Northern Germany, and Southern Germany.
 
 My hobbies include rock climbing, Ju Jitsu, Judo, Muy Thai, surfing, and play video games on my pc!
 
