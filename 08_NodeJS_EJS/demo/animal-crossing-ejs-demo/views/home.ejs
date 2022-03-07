@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villagers App</title>
+</head>
+<body>
+  <form action="/searchVillagers" method="GET">
+    <label for="search">Search for villagers</label>
+    <input type="text" id="search" name="searchTerm"/>
+    <button type="submit">Submit</button>
+  </form>
+  <% data.forEach(element => { %>
+   <a href="/<%= element.id %> "><h2><%= element.name["name-USen"] %> </h2></a>
+   <img src=<%= element.image_uri %>  alt=<%= element.name["name-USen"] %> > 
+  <% }) %>
+</body>
+</html>
+9:42
+{
+  "name": "demo_villager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "node-fetch": "^3.2.0"
+  }
+}
+Colla

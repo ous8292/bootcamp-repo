@@ -1,0 +1,55 @@
+<%- include('partials/header', {title: " - Home", body_id: "home", nav_bg: "light"}) %>
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h1 class='text-center mt-5 pt-5'>Peter Portfolio</h1>
+            </div>
+        </div>
+         <!--End row 1-->
+
+
+        <div class="row">
+
+            <% data.forEach(element => { %>
+                <div class="col"> <!-- creats a column for EACH itteration -->
+
+                    <div class="img_container">
+                        <img src=<%= element.src %>  alt=<%= element.alt %>>
+                    </div>
+
+
+                    <a href=<%= element.href %> target='_blank'> <!-- target creates a new tab vs dedault refreshes on same page-->
+                        <h2 class="text-center mt-3 mb-5"><%= element.content %></h2> <!-- created a link-->
+
+                    </a>
+
+                    
+
+
+                </div>
+            <% }) %>
+
+
+        </div>
+        <!-- End row 2-->
+
+    </div>
+    <!-- End container-->
+
+
+
+
+
+
+    
+
+
+<%- include('partials/footer') %>
+
+
+
+
+
+

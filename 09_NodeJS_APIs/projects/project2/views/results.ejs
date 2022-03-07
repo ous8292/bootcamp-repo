@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %> 
+
+<h1>THE MOVIES</h1>
+
+
+
+
+
+
+<% data.forEach(element => { %>
+    <%- include('partials/cards', {movie: element}) %>
+<% }) %>
+
+
+
+
+
+
+
+<%- include('partials/footer.ejs') %> 
+

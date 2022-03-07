@@ -1,0 +1,24 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background-image: url(assets/columbus.jpg);
+}
+
+/* flexbox */
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+.mainText {
+    color: white
+}

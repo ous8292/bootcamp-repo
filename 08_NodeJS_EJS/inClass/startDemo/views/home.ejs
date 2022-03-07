@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+
+    <h1>Home Page</h1>
+
+    <% let person = "Peter"%>
+
+    <h1><%= person %></h1>
+
+    <% let people = ["Kevin", "Shelby"] %>
+
+
+    <% people.forEach(function(doggy){ %>
+       <h1> <%= doggy %> </h1> 
+    <% }) %>
+
+    <% for (let i = 0; i < people.length; i++) { %>
+        <h1> <%= people[i] %> </h1>
+   <% } %>
+
+
+   <% let randNum = Math.random() * 10 %>
+   <h1> <%= randNum %></h1>
+
+<%- include('partials/footer.ejs') %>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+    <h1>Bitcoint Price App</h1>
+<body>
+ 
+
+
+<form action="/getCoin" method="get">
+    <div>
+        <input type="radio" id="usd" name="country" value="USD">
+        <label for="usd">USD</label>
+
+        <input type="radio" id="gbp" name="country" value="GBP">
+        <label for="gbp">GBP</label>
+
+        <input type="radio" id="eur" name="country" value="EUR">
+        <label for="eur">EUR</label>
+    </div>
+    <div>
+        <button type="submit">Get Price</button>
+    </div>
+    <h1>
+        <%- data.symbol %> <%= parseInt(data.rate_float) %> 
+        
+    </h1>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>

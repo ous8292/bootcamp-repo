@@ -1,0 +1,18 @@
+<h1> I am the animals page</h1>
+
+<!-- for each element do something, then display element-->
+<% doggyHorse.forEach(function(element){ %>
+    <%= element %>
+<% }) %>
+
+<%# ejs comments %>
+
+
+<!-- same array, but built into a list-->
+<ul>
+    <% doggyHorse.forEach(function(element){ %>
+        <li>
+            <%= element %>
+        </li>
+    <% }) %>
+</ul>

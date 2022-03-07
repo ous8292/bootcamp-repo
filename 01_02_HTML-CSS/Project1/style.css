@@ -1,0 +1,51 @@
+.cat {
+  background-color: black;
+}
+
+#dog {
+  color: white;
+  border-color: red;
+  border-style: solid;
+  width: 25%;
+  text-align: center;
+  /* margin: 0% 35% 0% 35%; */
+  margin: auto;
+}
+
+/* Task #2: It's being inherited by only the h1 and .cat from css*/
+
+#mouse {
+  color: yellow;
+  border-color: blue;
+  border-style: dashed;
+  size: 5px;
+  width: 200px;
+}
+
+/* Task #3: The word content is now showing up*/
+
+#bird {
+  color: lightgreen;
+  border: Green ridge 5px;
+  width: 50vw;
+  text-align: right;
+  margin: 100px 35% 0% 35%;
+}
+
+#horse {
+  color: orange;
+  margin: auto;
+}
+/* Task 4 The % and vw auto adjust with size of the screen, while px stays static no mater the size */
+
+/* Task #6: Cat horse got very long, vs staying the size like cat dog */
+
+/* Task 8: The image was added in full resolution. The image also did not center, had to use block element to center image*/
+
+image {
+  margin: 1-px;
+}
+
+div {
+  border: blue 5px solid;
+}

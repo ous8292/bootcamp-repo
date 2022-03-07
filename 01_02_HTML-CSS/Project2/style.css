@@ -1,0 +1,185 @@
+body,
+html {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: #eaf0ea;
+}
+
+.content {
+  padding: 30px;
+}
+
+.nav-main {
+  width: 100%;
+  background-color: #263238;
+  height: 75px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nav-footer {
+  width: 100%;
+  background-color: #263238;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 75px;
+  padding: 50px 50px;
+}
+
+.nav-main .logo {
+  float: left;
+  height: 40px;
+  padding: 15px 30px;
+  font-size: 1.44em;
+  line-height: 40px;
+}
+
+.nav-main > ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style-type: none;
+}
+
+.nav-main > ul > li {
+  float: left;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 15px 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav-item {
+  display: inline-block;
+  padding: 15px 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: #444;
+}
+
+/* Styling nav content */
+
+.nav-content {
+  position: absolute;
+  top: 70px;
+  overflow: hidden;
+  background-color: #222;
+  max-height: 0;
+}
+
+.nav-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-content a:hover {
+  text-decoration: underline;
+}
+
+.nav-sub {
+  padding: 20px;
+}
+
+.nav-sub ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-sub ul li a {
+  display: inline-block;
+  padding: 5px 0;
+}
+/* 
+adding drop down hid and display */
+
+.nav-item:focus {
+  background-color: #444;
+}
+
+.nav-item:focus ~ .nav-content {
+  max-height: 400px;
+}
+
+/* Couldn't get footer to work correctly, using class given code to complete */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-family: "Oswald", sans-serif;
+  background-color: #263238;
+  padding: 50px;
+  margin-top: 75px;
+  font-size: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.company {
+  margin: 0;
+  color: #b0bec5;
+  font-size: 28px;
+}
+
+.copyright {
+  margin: 0;
+  color: #b0bec5;
+  font-size: 16px;
+}
+
+.links {
+  color: white;
+  padding: 40px 0 23px 0;
+  margin: 0;
+  list-style: none;
+  font-weight: bold;
+}
+
+.links a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #cfd8dc;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+  footer {
+    padding: 35px;
+  }
+
+  .company {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .links {
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .links a {
+    line-height: 1.8;
+  }
+}
